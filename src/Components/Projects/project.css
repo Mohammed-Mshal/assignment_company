@@ -1,0 +1,67 @@
+.section {
+    flex: 1;
+    background-color: rgba(116, 177, 161, 0.1);
+    animation: section_animation .5;
+    -webkit-animation: section_animation forwards .5;
+}
+
+@keyframes section_animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header .count,
+.header .btn_add {
+    color: #286e5b;
+}
+
+.header .btn_add {
+    cursor: pointer;
+    background-color: rgba(116, 177, 161, 0.2);
+
+}
+
+.task {
+    transition: .4s all ease;
+    -webkit-transition: .4s all ease;
+    -moz-transition: .4s all ease;
+    -ms-transition: .4s all ease;
+    -o-transition: .4s all ease;
+    animation: .5s forwards task_animation;
+    -webkit-animation: .5s forwards task_animation;
+}
+
+@keyframes task_animation {
+    0% {
+        scale: 0;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+.task .title {
+    position: relative;
+}
+
+.task .title::before {
+    position: absolute;
+    content: "";
+    left: -10px;
+    top: 50%;
+    translate: 0 -50%;
+    background-color: #3a7f6d;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
