@@ -7,15 +7,14 @@ import Projects from "../Projects/Projects";
 import Chat from "../Chat/Chat";
 import Calendar from "../Calendar/Calendar";
 import Setting from "../Setting/Setting";
-import './main.css'
+import "./main.css";
 function Main() {
   return (
     <div className="main flex-fill p-5">
       <Topbar />
       <div className="main_content">
         <Routes>
-          <Route index element={<Overview />} />
-          <Route path="/" element={<Projects />} />
+          <Route index element={<Projects />} />
           <Route path="overview" element={<Overview />} />
           <Route path="stats" element={<Stats />} />
           <Route path="projects" element={<Projects />} />

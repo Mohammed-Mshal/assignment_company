@@ -27,7 +27,7 @@ function Sidebar() {
       <div className="list_links-5 d-flex flex-column flex-fill justify-content-between">
         <div className="Links  d-flex flex-column">
           <Link
-            to={"/overview"}
+            to={"/assignment_company/overview"}
             onClick={(e) => setActive("overview")}
             className={`text-black text-decoration-none fs-5 d-flex align-items-center fw-bold `}
           >
@@ -44,7 +44,7 @@ function Sidebar() {
             </motion.p>
           </Link>
           <Link
-            to={"/stats"}
+            to={"/assignment_company/stats"}
             onClick={(e) => setActive("stats")}
             className={`text-black text-decoration-none fs-5 d-flex align-items-center fw-bold `}
           >
@@ -61,7 +61,7 @@ function Sidebar() {
             </motion.p>
           </Link>
           <Link
-            to={"/projects"}
+            to={"/assignment_company/projects"}
             onClick={(e) => setActive("projects")}
             className={`text-black text-decoration-none fs-5 d-flex align-items-center fw-bold`}
           >
@@ -78,7 +78,7 @@ function Sidebar() {
             </motion.p>
           </Link>
           <Link
-            to={"/chat"}
+            to={"/assignment_company/chat"}
             onClick={(e) => setActive("chat")}
             className={`text-black text-decoration-none fs-5 d-flex align-items-center fw-bold`}
           >
@@ -106,7 +106,7 @@ function Sidebar() {
             </motion.div>
           </Link>
           <Link
-            to={"/calendar"}
+            to={"/assignment_company/calendar"}
             onClick={(e) => setActive("calendar")}
             className={`text-black text-decoration-none fs-5 d-flex align-items-center fw-bold`}
           >
@@ -125,6 +125,7 @@ function Sidebar() {
         </div>
         <div className="Links d-flex flex-column mt-auto">
           <Link
+            to={"/assignment_company/setting"}
             onClick={(e) => setActive("setting")}
             className={`text-black text-decoration-none fs-5 d-flex align-items-center fw-bold`}
           >
